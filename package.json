@@ -10,6 +10,7 @@
     "url": "git+https://github.com/ArengiServices/uploadify-plugins.git"
   },
   "author": "",
+  "main": "uploadify/jquery.uploadifive.js",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArengiServices/uploadify-plugins/issues"
