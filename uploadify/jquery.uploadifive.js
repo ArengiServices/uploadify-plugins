@@ -546,7 +546,7 @@
                 $data.uploadComplete = function(e, file, uploadAll) {
                     if ($.inArray('onUploadComplete', settings.overrideEvents) < 0) {
                         file.queueItem.find('.progress-bar').css('width', '100%');
-                        file.queueItem.find('.fileinfo').html(' - '+Translator.get('Complete'));
+                        file.queueItem.find('.fileinfo').html(' - '+Translator.trans('Complete'));
                         file.queueItem.find('.progress').slideUp(250);
                         file.queueItem.addClass('complete');
                     }
@@ -801,7 +801,7 @@
                         if ($data.uploads.current == 0) {
                             if ($.inArray('onError', settings.overrideEvents) < 0) {
                                 if ($data.filesToUpload() > 0 && settings.uploadLimit != 0) {
-                                    alert(Translator.get(
+                                    alert(Translator.trans(
                                         'The maximum number of queue items has been reached (%limit%).  Please select fewer files.', {'limit': settings.queueSizeLimit}));
 
                                 }
