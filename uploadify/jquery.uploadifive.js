@@ -181,7 +181,7 @@
                     if (($data.queue.count + limit) > settings.queueSizeLimit && settings.queueSizeLimit !== 0) {
                         // Check if the queueSizeLimit was reached
                         if ($.inArray('onError', settings.overrideEvents) < 0) {
-                            alert(Translator.trans(
+                            alert(Translator.get(
                                 'The maximum number of queue items has been reached (%limit%).  Please select fewer files.', {'limit': settings.queueSizeLimit}));
                         }
                         // Trigger the onError event
