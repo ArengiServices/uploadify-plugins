@@ -272,7 +272,7 @@
                         if (fileName.length > settings.truncateLength && settings.truncateLength != 0) {
                             fileName = fileName.substring(0, settings.truncateLength) + '...';
                         }
-                        file.queueItem.find('.filename').html(fileName);
+                        file.queueItem.find('.filename').text(fileName);
                         // Add a reference to the file
                         file.queueItem.data('file', file);
                         $data.queueEl.append(file.queueItem);
